@@ -14,7 +14,7 @@ const PostCard: React.FC<Props> = ({ post, onEdit, onDelete }) => {
       <img
         src={post.image}
         alt={post.title}
-        className="w-full h-40 object-cover"
+        className="w-full h-40 object-contain"
       />
 
       <div className="p-4">
@@ -25,7 +25,8 @@ const PostCard: React.FC<Props> = ({ post, onEdit, onDelete }) => {
         <div className="flex gap-3 mt-4">
           <Button className="w-20" text="Edit" onClick={() => onEdit(post)} />
 
-          <Button className="w-20"
+          <Button
+            className="w-20"
             text="Delete"
             onClick={() => onDelete(post?.id)}
             variant="danger"

@@ -105,7 +105,7 @@ export default function PostModal({
         <img
           src={image}
           alt="preview"
-          className="h-24 rounded mb-3 object-cover"
+          className="h-24 rounded mb-3 object-contain"
         />
       )}
 
