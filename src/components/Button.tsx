@@ -1,5 +1,3 @@
-import React from "react";
-
 type Variant = "primary" | "secondary" | "danger";
 
 type Props = {
